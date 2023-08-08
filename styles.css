@@ -11,17 +11,19 @@
     --primary: #004d7a;
     --secondary: #AADCF8;
     --accent: #ffc20f;
+    --accent2: #34b63d;
     --black: #000000;
+    --wbg: #ffffff;
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #ffffff;
+    background-color: var(--wbg);
     font-size: 20px;
 }
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: var(--black);
 }
 
 button {
@@ -32,13 +34,13 @@ button {
     cursor: pointer;
 }
 .button-primary {
-    background-color: #34b63d;
-    color: #ffffff;
+    background-color: var(--accent2);
+    color: var(--wbg);
 }
 
 .button-secondary {
-    background-color: #004d7a;
-    color: #ffffff;
+    background-color: var(--primary);
+    color: var(--wbg);
 }
 
 header {
@@ -52,7 +54,7 @@ header {
 .mainlogo > a {
     font-family: 'Abril Fatface', cursive;
     font-size: 2.5rem;
-    color: white;
+    color: var(--wbg);
 }
 
 .mainlogo > a:hover {
@@ -66,11 +68,8 @@ header {
     gap: 20px;
 }
 
-.menu-items li {
-    /* padding: 20px; */
-}
 .menu-items li a {
-    color: white;
+    color: var(--wbg);
     padding: 6px 10px;
     border-radius: 5px;
 }
@@ -85,15 +84,19 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: #34b63d;
+    background-color: var(--accent2);
     padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.account a:hover {
-    color: #000000;
+.account:hover {
+    background-color: #34b63d5d;
     transition: 500ms;
+}
+
+.account a:hover {
+    
 }
 
 .account a {
