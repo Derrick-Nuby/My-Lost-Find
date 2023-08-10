@@ -112,25 +112,6 @@ header {
     height: 30px;
 }
 
-/* ?heroo  section*/
-
-.hero-section {
-    background-color: #aadbf841;
-    padding: 40px 40px;
-}
-.bigtitle {
-    margin-top: 50px;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.othertxt {
-    width: 70%;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
 .cta {
     background-color: #34b63d;
     font-size: 22px;
@@ -141,16 +122,14 @@ header {
 .cta:hover {
     border-radius: 4px;
     background-color: #34b63d5d;
-    color: var(--wbg);
     transition: 500ms;
 }
 
 
 
-/* footer section designs */
 footer {
     background-color: var(--primary);
-    padding: 15px 75px;
+    padding: 50px 75px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
@@ -214,12 +193,53 @@ footer {
 }
 
 .copy {
-    background-color: var(--primary);
+    background-color: #004d7ae8;
     color: var(--wbg);
     font-size: 16px;
     text-align: center;
     padding: 20px 10px;
 }
+
+/* hero continues here */
+.hero-section {
+    background-color: #aadbf8;
+    background-image: url(./images/allbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 40px;
+}
+
+.bigtitle {
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.othertxt {
+    width: 70%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.mrglft {
+    margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -302,6 +322,10 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
+    }
+
+    .hero-section {
+    background-position: right;
     }
 
 
