@@ -45,12 +45,15 @@ button {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--primary);
-    padding: 5px 40px;
+    padding: 5px 0px 5px 40px;
 }
 
+/* .mobile-menu {
+    display: none;
+} */
 .mainlogo > a {
     font-family: 'Abril Fatface', cursive;
     font-size: 2.5rem;
@@ -75,8 +78,14 @@ header {
 }
 
 .menu-items li a:hover {
-    color: var(--black);
-    background-color: var(--secondary);
+    /* color: var(--black); */
+    font-weight: bold;
+    background-color: #aadbf83d;
+}
+
+.fa-bars {
+    display: none;
+    color: #04aa6d;
 }
 
 .account {
@@ -95,10 +104,6 @@ header {
     transition: 500ms;
 }
 
-.account a:hover {
-    
-}
-
 .account a {
     color: #ffffff;
     font-weight: bold;
@@ -107,13 +112,11 @@ header {
     height: 30px;
 }
 
-/* ?heroo */
+/* ?heroo  section*/
 
 .hero-section {
     background-color: #aadbf841;
     padding: 40px 40px;
-}
-.left {
 }
 .bigtitle {
     margin-top: 50px;
@@ -136,38 +139,193 @@ header {
 }
 
 .cta:hover {
-    border-radius: 10px;
-    color: var(--secondary);
+    border-radius: 4px;
+    background-color: #34b63d5d;
+    color: var(--wbg);
+    transition: 500ms;
 }
 
 
 
+/* footer section designs */
+footer {
+    background-color: var(--primary);
+    padding: 15px 75px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.ftdes {
+    text-align: left;
+}
+.ftdes p {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.ftdes span a {
+    color: var(--accent2);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.ftitle {
+    color: white;
+    font-weight: bolder;
+    font-size: 34px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.usefulinks ul {
+    list-style: none;
+}
+
+.usefulinks li{
+    margin-top: 10px;
+    color: var(--accent2);
+    font-weight: 500;
+}
+
+.usefulinks a:hover {
+    font-weight: bold;
+    color: var(--accent2);
+}
+.usefulinks li::before{
+    content: "➔";
+    margin-right: 7px;
+}
+
+.submit-connect {
+    display: flex;
+    flex-direction: column;
+}
 
 
 
+.submit-connect i {
+    font-size: 34px;
+    margin-right: 7px;
+}
 
+.fbuttons button {
+    margin-bottom: 20px;
+}
 
+.copy {
+    background-color: var(--primary);
+    color: var(--wbg);
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 10px;
+}
 
 
 
 /* Mobile devices */
-@media (max-width: 480px) {
-    header {
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
-    .menu-items {
-        display: none;
-    }
+@media (min-width: 481px) and (max-width: 768px),
+(max-width: 480px) {
     .mainlogo>a {
         font-size: 27px;
     }
+    .fa-bars {
+            display: inline-block;
+    }
+    .mobile-menu {
+        background-color: var(--accent);
+        position: fixed;
+        overflow: hidden;
+        right: 0px;
+        top: 8vh;
+        width: 100vw;
+        z-index: 999;
+        transition: right 0.5s ease;
+        color: var(--wbg);
+        padding: 10px;
+        display: none;
+    }
+    .mobile-menu.active {
+            display: block;
+    }
+
+    .mobile-menu a {
+        color: var(--wbg);
+    }
+    .menu-items {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+        gap: 0px;
+        white-space: nowrap;
+    }
+    
+    .menu-items li{
+        width: 100%;
+        padding: 7px 0px;
+        border-radius: 0px;
+    }
+    
+    .menu-items li:hover {
+        font-weight: bold;
+        background-color: #aadbf83d;
+    }
+    .account {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--accent2);
+        padding: 8px 16px;
+        border-radius: 0px;
+        cursor: pointer;
+    }
+    
+    .account:hover {
+        background-color: #34b63d5d;
+        transition: 500ms;
+    }
+    
+    .account a {
+        color: #ffffff;
+        font-weight: bold;
+    }
+    
+    .account>img {
+        height: 30px;
+    }
+
+    /* footer design */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
+
+
+
+
 /* iPads, Tablets */
-@media (min-width: 481px) and (max-width: 768px) {
+/* @media (min-width: 481px) and (max-width: 768px) {
     header {
             text-align: center;
             display: flex;
@@ -182,7 +340,7 @@ header {
         .mainlogo>a {
             font-size: 32px;
         }
-}
+} */
 
 /* Small screens, laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
