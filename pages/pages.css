@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #004d7a;
+    --secondary: #AADCF8;
+    --accent: #ffc20f;
+    --accent2: #34b63d;
+    --black: #000000;
+    --wbg: #ffffff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--wbg);
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: var(--accent2);
+    color: var(--wbg);
+}
+
+.button-secondary {
+    background-color: var(--primary);
+    color: var(--wbg);
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: var(--secondary); */
+    padding: 100px 0px;
+}
+
+/* editing forms */
+
+.mainbox {
+    background-color: var(--secondary);
+    width: 50%;
+    margin: 0 auto;
+}
+
+#create {
+    display: none;
+}
+label {
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.stitle {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.choose {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.btnsc, .btnsc a, .sbtnsc{
+    font-size: 24px;
+    color: var(--wbg);
+    cursor: pointer;
+    padding: 10px 1%;
+    text-align: center;
+    width: 100%;
+}
+
+.btnsc:hover, .btnsc a:hover {
+    background-color: var(--secondary);
+    color: var(--black);
+    /* border: #004d7a 1px solid; */
+}
+
+.btnsc.active {
+    background-color: var(--secondary);
+    color: var(--black);
+    border: #004d7a 1px solid;
+}
+
+form {
+    padding: 30px;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+input:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type="password"] {
+    font-family: monospace;
+}
+
+input[type="submit"] {
+    width: 50%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.middle {
+    text-align: center;
+}
