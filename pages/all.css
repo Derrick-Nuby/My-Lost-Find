@@ -118,18 +118,6 @@ header {
     background-color: #aadbf841;
     padding: 40px 40px;
 }
-.bigtitle {
-    margin-top: 50px;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.othertxt {
-    width: 70%;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
 
 .cta {
     background-color: #34b63d;

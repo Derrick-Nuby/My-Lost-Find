@@ -227,9 +227,39 @@ footer {
     margin-left: 40px;
 }
 
+/* individual section second steps */
 
+.useof {
+    padding: 100px 50px;
+    display: flex;
+    gap: 50px;
+}
 
+.box {
+    background-color: var(--secondary);
+    padding: 20px;
+    border-radius: 10px;
+}
 
+.box > img {
+    height: 100px;
+}
+.ttext {
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.alllist{
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.bthw {
+    text-align: center;
+}
 
 
 
@@ -328,6 +358,10 @@ footer {
     background-position: right;
     }
 
+    .useof {
+        display: flex;
+        flex-direction: column;
+    }
 
 
 
