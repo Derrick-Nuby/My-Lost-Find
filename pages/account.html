@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/9e43b5fe15.js" crossorigin="anonymous"></script>
     <title>Login | Create Account | MyLostFind.Com</title>
     <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./pages.css">
 </head>
 <body>
     <header>
@@ -30,7 +31,45 @@
         </div>
         <a href=""></a><a href="#"><i class="fa-solid fa-bars" id="toggleButton"></i></a>
     </header>
+    <main>
+        <!-- <h1 class="btitle">Login Or Create An Acount</h1> -->
+        <div class="mainbox">
+            <div class="choose">
+                <div class="btnsc active" id="loginbtn">
+                    Login
+                </div>
+                <div class="btnsc" id="createbtn">
+                    Create Account
+                </div>
+            </div>
+            <div class="login" id="login">
+                <form action="">
+                    <label for="">Email:</label>
+                    <input type="email">
+                    <label for="">Password:</label>
+                    <input type="password">
+                    <div class="middle"><input type="submit" value="LogIn"></div>
+                </form>
+            </div>
 
+            <div class="create" id="create">
+                <form action="">
+                    <label for="">Names:</label>
+                    <input type="text">
+                    <label for="">Id No:</label>
+                    <input type="number">
+                    <label for="">Email: </label>
+                    <input type="email" name="" id="">
+                    <label for="">Phone:</label>
+                    <input type="number" name="" id="">
+                    <label for="">Password:</label>
+                    <input type="password">
+                    <div class="middle"><input type="submit" value="Create Account"></div>
+
+                </form>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="ftdes">
             <div class="mainlogo">
@@ -77,5 +116,6 @@
     <div class="copy">© 2023 MyLostFind.Com. All rights reserved.</div>
 </body>
 <script src="../app.js"></script>
+<script src="./pages.js"></script>
 
 </html>
