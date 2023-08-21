@@ -135,6 +135,10 @@ input[type="submit"] {
     margin-top: 20px;
 }
 
+input [type="email"] {
+    text-transform: lowercase;
+}
+
 input[type="submit"]:hover {
     background-color: var(--primary);
     color: var(--wbg);
@@ -199,4 +203,39 @@ h3 {
 
 .faq a {
     color: var(--accent2);
+}
+
+.notification {
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+
+.notification a {
+    color: var(--primary);
+}
+
+
+#error {
+    display: none;
+    background-color: #bf131f;
+    padding: 20px 30px;
+    /* font-weight: bold; */
+    color: white;
+    border-radius: 10px 0px 0px 10px;
+    position: fixed;
+    width: 50%;
+    right: 0;
+    top: 10%;
+    animation: slideInFromRight 1s forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        right: -50%;
+    }
+
+    100% {
+        right: 0;
+    }
 }
