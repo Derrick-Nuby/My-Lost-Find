@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="./all.css">
     <link rel="stylesheet" href="./pages.css">
 </head>
+
+    <div id="error">
+        <p></p>
+    </div>
 <body>
     <header>
         <div class="mainlogo">
@@ -45,10 +49,10 @@
             <div class="login" id="login">
                 <form action="">
                     <label for="">Email:</label>
-                    <input type="email">
+                    <input type="email" id="emailInput">
                     <label for="">Password:</label>
-                    <input type="password">
-                    <div class="middle"><input type="submit" value="LogIn"></div>
+                    <input type="password" id="password">
+                    <div class="middle"><input type="submit" value="LogIn" onclick="validateForm(event)"></div>
                 </form>
             </div>
 
@@ -59,9 +63,9 @@
                     <label for="">Id No:</label>
                     <input type="number">
                     <label for="">Email: </label>
-                    <input type="email" name="" id="">
+                    <input type="email" name="mail" id="emailtest">
                     <label for="">Phone:</label>
-                    <input type="number" name="" id="">
+                    <input type="number" name="numnerss" id="ofphone">
                     <label for="">Password:</label>
                     <input type="password">
                     <div class="middle"><input type="submit" value="Create Account"></div>
