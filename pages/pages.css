@@ -59,7 +59,7 @@ main {
 .mainbox {
     background-color: var(--secondary);
     width: 50%;
-    margin: 0 auto;
+    margin: 100px auto;
     border: #004d7a 1px solid;
 }
 
@@ -111,7 +111,7 @@ form {
     padding: 30px;
 }
 
-input {
+input, textarea, select {
     width: 70%;
     padding: 8px;
     margin-bottom: 15px;
@@ -120,7 +120,7 @@ input {
     font-size: 20px;
 }
 
-input:focus {
+input:focus, textarea:focus {
     background-color: #ddd;
     outline: none;
 }
@@ -133,6 +133,15 @@ input[type="submit"] {
     width: 50%;
     cursor: pointer;
     margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary);
+    color: var(--wbg);
+}
+
+.hidden {
+    display: none;
 }
 
 .middle {
