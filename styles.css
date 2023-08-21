@@ -79,7 +79,7 @@ header {
 
 .menu-items li a:hover {
     /* color: var(--black); */
-    font-weight: bold;
+    /* font-weight: bold; */
     background-color: #aadbf83d;
 }
 
@@ -261,6 +261,15 @@ footer {
     text-align: center;
 }
 
+.bthw button, .bthw a {
+    background-color: var(--primary);
+    color: var(--wbg);
+}
+
+.bthw button:hover, .bthw a:hover {
+    /* padding: 9px 18px; */
+    font-size: 19px;
+}
 
 
 
