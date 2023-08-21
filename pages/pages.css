@@ -2,9 +2,11 @@
 
 
 * {
-    padding: 0px;
-    margin: 0px;
+    /* padding: 0px; */
+    /* margin: 0px; */
     box-sizing: border-box;
+    /* border: 1px red solid; */
+
 }
 
 :root {
@@ -49,7 +51,7 @@ main {
     margin: 0px;
     padding: 0px;
     /* background-color: var(--secondary); */
-    padding: 100px 0px;
+    padding: 0px 0px;
 }
 
 /* editing forms */
@@ -58,6 +60,7 @@ main {
     background-color: var(--secondary);
     width: 50%;
     margin: 0 auto;
+    border: #004d7a 1px solid;
 }
 
 #create {
@@ -101,7 +104,7 @@ label {
 .btnsc.active {
     background-color: var(--secondary);
     color: var(--black);
-    border: #004d7a 1px solid;
+    /* border: #004d7a 1px solid; */
 }
 
 form {
@@ -143,6 +146,7 @@ input[type="submit"] {
 
 .hero-section {
     text-align: center;
+    background-color: #aadbf8;
 }
 .bigtitle {
     margin-top: 50px;
@@ -154,4 +158,36 @@ input[type="submit"] {
 .othertxt {
     width: 80%;
     margin: 60px auto 60px auto;
+}
+
+.blogpost, .faq, .endings {
+    padding: 50px 170px;
+    background-color: #aadbf841;
+}
+
+h2 {
+    color: var(--primary);
+}
+
+h3 {
+    color: var(--accent2);
+    margin-left: 30px;
+}
+
+.blogpost p {
+    margin-left: 60px;
+}
+
+.faq b {
+    color: #206d25;
+}
+
+.endings span {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent2);
+}
+
+.faq a {
+    color: var(--accent2);
 }
