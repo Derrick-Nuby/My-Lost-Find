@@ -126,4 +126,19 @@
     <div class="copy">© 2023 MyLostFind.Com. All rights reserved.</div>
 </body>
 <script src="../app.js"></script>
+<script>
+    const itemTypeSelect = document.getElementById("itemType");
+    const otherLabel = document.getElementById("otherLabel");
+    const otherDocumentType = document.getElementById("otherDocumentType");
+
+    itemTypeSelect.addEventListener("change", function () {
+        if (itemTypeSelect.value === "other") {
+            otherLabel.classList.remove("hidden");
+            otherDocumentType.classList.remove("hidden");
+        } else {
+            otherLabel.classList.add("hidden");
+            otherDocumentType.classList.add("hidden");
+        }
+    });
+</script>
 </html>
