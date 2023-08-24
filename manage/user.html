@@ -11,12 +11,13 @@
     <script src="https://kit.fontawesome.com/9e43b5fe15.js" crossorigin="anonymous"></script>
     <title>MyLostFind.Com | Reunite with What's Lost, Embrace What's Found</title>
     <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./manage.css">
 </head>
 
 <body>
     <header>
         <div class="mainlogo">
-            <a href="../index.html">MyLostFind.Com</a>
+            <a href="../index.html">MyLostFind.Com|<span>Admin</span></a>
         </div>
         <div class="mobile-menu">
             <ul class="menu-items">
@@ -32,6 +33,35 @@
         </div>
         <a href=""></a><a href="#"><i class="fa-solid fa-bars" id="toggleButton"></i></a>
     </header>
+
+    <main>
+        <div class="menupen" id="openmenu" onclick="menuOpen()">
+            <b>☰</b>
+        </div>
+        <div class="sidebar" id="sidesection">
+            <div id="close" onclick="menuClose()"><b>X</b></div>
+            <a href="" class="sidecontent"><span>➤</span> Home</a>
+            <a href="" class="sidecontent">Lost Items</a>
+            <a href="" class="sidecontent">Found Items</a>
+            <a href="" class="sidecontent">Completed and Matched</a>
+            <a href="" class="sidecontent">Notification</a>
+            <a href="" class="sidecontent">Account Management</a>
+            <a href="" class="sidecontent">Logout</a>
+        </div>
+
+        <h1 class="salutation"><span id="greeting">Hello</span> Samantha</h1>
+
+        <div class="boxucont">
+            <div>
+                <h3>Add The Items You Have Lost</h3>
+            <div class="boxu bou-1"><span>+</span></div>
+            </div>
+            <div>
+                <h3>Add The Items You Have Found</h3>
+            <div class="boxu bou-2"><span>+</span></div>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div class="ftdes">
@@ -83,5 +113,7 @@
     <div class="copy">© 2023 MyLostFind.Com. All rights reserved.</div>
 </body>
 <script src="../app.js"></script>
+<script src="./manage.js"></script>
+
 
 </html>
