@@ -11,13 +11,13 @@
     <script src="https://kit.fontawesome.com/9e43b5fe15.js" crossorigin="anonymous"></script>
     <title>MyLostFind.Com | Reunite with What's Lost, Embrace What's Found</title>
     <link rel="stylesheet" href="./all.css">
-    <link rel="stylesheet" href="./manage.css">
+    <link rel="stylesheet" href="./user.css">
 </head>
 
 <body>
     <header>
         <div class="mainlogo">
-            <a href="../index.html">MyLostFind.Com|<span>Admin</span></a>
+            <a href="../index.html">MyLostFind.Com</a>
         </div>
         <div class="mobile-menu">
             <ul class="menu-items">
@@ -39,16 +39,46 @@
             <b>☰</b>
         </div>
         <div class="sidebar" id="sidesection">
-            <div id="close" onclick="menuClose()"><b>X</b></div>
-                <a href="./admin.html" class="sidecontent"><span>➤</span> Home</a>
-                <a href="./lostsubmissions.html" class="sidecontent">Submitted Lost Items</a>
-                <a href="./foundsubmissions.html" class="sidecontent">Submitted Found Items</a>
-                <a href="./contactedpeople.html" class="sidecontent">Contacted People</a>
-                <a href="./accountmanagement.html" class="sidecontent">Accounts &amp; Users</a>
-                <a href="./systemstatus.html" class="sidecontent">System Status</a>
-                <a href="../index.html" class="sidecontent">Logout</a>
+            <div class="flextop">
+                <div class="sidelogo">
+                    <a href="../index.html">MyLostFind.Com</a>
+                </div>
+                <div id="close" onclick="menuClose()"><b>X</b></div>
+            </div>
+            <a href="" class="sidecontent activeside"><span>➤</span> Home</a>
+            <a href="" class="sidecontent">Lost Items</a>
+            <a href="" class="sidecontent">Found Items</a>
+            <a href="" class="sidecontent">Completed and Matched</a>
+            <a href="" class="sidecontent">Notification</a>
+            <a href="" class="sidecontent">Account Management</a>
+            <a href="" class="sidecontent">Logout</a>
         </div>
-        <h1>Hello admin</h1>
+    
+        <h1 class="salutation"><span id="greeting">Hello</span> Frederick</h1>
+    
+        <div class="boxucont">
+            <div>
+                <h3 class="headings">Add The Items You Have Lost</h3>
+                <div class="boxu bou-1"><span>+</span></div>
+            </div>
+            <div>
+                <h3 class="headings">Add The Items You Have Found</h3>
+                <div class="boxu bou-2"><span>+</span></div>
+            </div>
+        </div>
+
+        <h1 class="salutation"> Notifications</h1>
+
+        <div class="notifications">
+            <!-- <h2 class="notitle">Quick Notifications</h2> -->
+            <ol class="notitems">
+                <li>Admin Has Responded To Your Contact Form<a href=""> Check It Out</a>.</li>
+                <li>You Have a new document match<a href=""> Please Authorise</a>.</li>
+                <li>One New found items <a href="">check them</a>.</li>
+                <li>Use Two Factors Authentication For Maximum Security<a href=""> Do it Now</a>.</li>
+            </ol>
+        </div>
+
     </main>
 
     <footer>
@@ -101,7 +131,7 @@
     <div class="copy">© 2023 MyLostFind.Com. All rights reserved.</div>
 </body>
 <script src="../app.js"></script>
-<script src="./manage.js"></script>
+<script src="./user.js"></script>
 
 
 </html>
