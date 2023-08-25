@@ -180,4 +180,40 @@ b {
     padding: 50px 140px;
 }
 
+/* tables */
 
+#tables {
+    width: 90%;
+    margin: 0 auto 180px auto;
+    border-collapse: collapse;
+}
+
+#tables td, #tables th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tables tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tables tr:hover {
+    background-color: #ddd;
+}
+
+#tables th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--accent2);
+    color: white;
+}
+
+.notfound {
+    color: red;
+}
+
+
+td a {
+    color: var(--accent2);
+}
