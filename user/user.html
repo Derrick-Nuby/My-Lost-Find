@@ -34,6 +34,17 @@
         <a href=""></a><a href="#"><i class="fa-solid fa-bars" id="toggleButton"></i></a>
     </header>
 
+    <!-- all popups -->
+
+    <div id="simpleModal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <span class="closeBtn" onclick="closeModal()">&times;</span>
+            <!-- content goes here -->
+            <!-- content ends here -->
+
+        </div>
+    </div>
+
     <main>
         <div class="menupen" id="openmenu" onclick="menuOpen()">
             <b>☰</b>
@@ -59,11 +70,11 @@
         <div class="boxucont">
             <div>
                 <h3 class="headings">Add The Items You Have Lost</h3>
-                <div class="boxu bou-1"><span>+</span></div>
+                <div class="boxu bou-1 modalBtn" id="" onclick="displayLostForm()"><span>+</span></div>
             </div>
             <div>
                 <h3 class="headings">Add The Items You Have Found</h3>
-                <div class="boxu bou-2"><span>+</span></div>
+                <div class="boxu bou-2 modalBtn" onclick="displayFoundForm()"><span>+</span></div>
             </div>
         </div>
 

@@ -16,6 +16,64 @@
     /* color: var(--black); */
 }
 
+/* modal for all pages */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalOpen;
+    animation-duration: 1s;
+}
+
+@keyframes modalOpen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modalClose {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.closeBtn {
+    color: #ccc;
+    float: right;
+    font-weight: bolder;
+    font-size: 34px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* end of modal */
+
 .sidelogo>a {
     font-family: 'Abril Fatface', cursive;
     font-size: 2rem;
@@ -344,3 +402,5 @@ input[type="submit"]:hover {
     background-color: var(--primary);
     color: var(--wbg);
 }
+
+/* mod */
