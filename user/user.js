@@ -123,3 +123,53 @@ function displayFoundForm() {
             </div>`;
   modalContent.innerHTML = htmlContent;
 }
+
+function displayLost() {
+  const htmlContent = `<div class="singlelost">
+                    <span style="padding-right: 20px;" class="closeBtn" onclick="closeModal()">&times;</span>
+                <div class="title sbtnsc">Lost Item ID1987... </div>
+                <div class="contents">
+                    <table id="tables">
+                        <tr>
+                            <td>Item Type</td>
+                            <td>Identification Card</td>
+                        </tr>
+                        <tr>
+                            <td>Item Number</td>
+                            <td>1801230296644121</td>
+                        </tr>
+                        <tr>
+                            <td>Location Lost</td>
+                            <td>Kigali-Gasabo-Gacuriro</td>
+                        </tr>
+                        <tr>
+                            <td>Date Lost</td>
+                            <td>09/01/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Date Reported</td>
+                            <td>19/01/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Status</td>
+                            <td>Found</td>
+                        </tr>
+                        <tr>
+                            <td>Date Found</td>
+                            <td>12/01/2023</td>
+                        </tr>
+                        <tr>
+                            <td>Location Found</td>
+                            <td>Kigali-Gasabo-Gacuriro</td>
+                        </tr>
+                        <tr>
+                            <td>Acquired</td>
+                            <td>Yes</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="footeritem">Further Processes</div>
+            </div>`;
+  modalContent.innerHTML = htmlContent;
+}
