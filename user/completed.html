@@ -14,6 +14,19 @@
     <link rel="stylesheet" href="./user.css">
 </head>
 
+    <!-- all popups -->
+    
+    <div id="simpleModal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <span class="closeBtn" onclick="closeModal()">&times;</span>
+            <!-- content goes here -->
+            <!-- content ends here -->
+    
+        </div>
+    </div>
+    
+    <!-- end of popup -->
+
 <body>
     <header>
         <div class="mainlogo">
@@ -66,12 +79,12 @@
                 <td>2</td>
                 <td>Identification</td>
                 <td>1801230296644121</td>
-                <td class="found"><a href="">View Details</a></td>
+                <td onclick="displayLost()" class="modalBtn"><span>view details</span></td>
             </tr>
         </table>
         <h1 class="salutation">Completed Found Items</h1>
         
-        <table id="tables">
+        <table id="tables" style="margin-bottom: 180px;">
             <tr>
                 <th>No</th>
                 <th>Item-Type</th>
@@ -82,7 +95,7 @@
                 <td>2</td>
                 <td>Identification</td>
                 <td>1801230296644121</td>
-                <td class="found"><a href="">View Details</a></td>
+                <td onclick="displayLost()" class="modalBtn"><span>view details</span></td>
             </tr>
         </table>
 
