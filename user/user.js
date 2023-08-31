@@ -124,7 +124,7 @@ function displayFoundForm() {
   modalContent.innerHTML = htmlContent;
 }
 
-function displayLost() {
+function displayItem() {
   const htmlContent = `<div class="singlelost">
                     <span style="padding-right: 20px;" class="closeBtn" onclick="closeModal()">&times;</span>
                 <div class="title sbtnsc">Lost Item ID1987... </div>
