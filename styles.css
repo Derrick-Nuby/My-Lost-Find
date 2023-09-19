@@ -14,6 +14,9 @@
     --accent2: #34b63d;
     --black: #000000;
     --wbg: #ffffff;
+    --padding: 12px;
+    --main-font: 'Open Sans', sans-serif;
+    --secondary-font: 'Abril Fatface', cursive;
 }
 body {
     font-family: 'Open Sans', sans-serif;

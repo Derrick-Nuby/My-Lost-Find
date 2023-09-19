@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicons/site.webmanifest">
+    <script src="https://kit.fontawesome.com/9e43b5fe15.js" crossorigin="anonymous"></script>
+    <title>Contact-Us | MyLostFind.Com</title>
+    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./pages.css">
+</head>
+
+<body>
+    <header>
+        <div class="mainlogo">
+            <a href="../index.html">MyLostFind.Com</a>
+        </div>
+        <div class="mobile-menu">
+            <ul class="menu-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/recover.html">Recover Lost Items</a></li>
+                <li><a href="../pages/submit.html">Submit Found Items</a></li>
+                <li><a href="../pages/howto.html">Guide</a></li>
+                <div class="account">
+                    <img src="../images/user.png" alt="">
+                    <span><a href="../pages/account.html">Account</a></span>
+                </div>
+            </ul>
+        </div>
+        <a href=""></a><a href="#"><i class="fa-solid fa-bars" id="toggleButton"></i></a>
+    </header>
+
+    <main>
+        <div class="mainbox">
+            <div class="choose">
+                <div class="sbtnsc">
+                    Contact-Us
+                </div>
+            </div>
+            <div class="login" id="login">
+                <form action="">    
+                    <label for="">Names:</label>
+                    <input type="text">
+                    <label for="">Email:</label>
+                    <input type="email">
+                    <label for="">Phone-Number</label>
+                    <input type="text">
+                    <label for="choice">Cause</label>
+                    <select name="" id="">
+                        <option value="">Why are you contacting us...</option>
+                        <option value="">How To Use</option>
+                        <option value="">Fake Document</option>
+                        <option value="">Fraud or Harrassment</option>
+                        <option value="">Other</option>
+                    </select>
+                    <label for="">Problem Description</label>
+                    <textarea name="" id="" cols="60" rows="10"></textarea>
+                    <div class="middle"><input type="submit" value="Submit"></div>
+                    <p class="notification"><span>*For a faster response please <a href="./account.html">Login</a></span></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="ftdes">
+            <div class="mainlogo">
+                <a href="../index.html">MyLostFind.Com</a>
+            </div>
+            <p> <span><a href="../index.html">MyLostFind</a></span> is your trusted partner in reuniting you with your valuable
+                belongings. We have started a movement of
+                community-driven support, helping individuals recover what matters most. With dedication and innovation, we
+                have
+                successfully facilitated the retrieval of over a million lost documents and items. Work with us to submit
+                found items, and be a hero in someone's journey to recover their cherished possessions. Together, let's make
+                a difference. Together, let's bring smiles back by reuniting people with their lost treasures.</p>
+        </div>
+    
+        <div class="usefulinks">
+            <div class="ftitle">Useful Links</div>
+            <ul>
+                <li> <a href="../index.html">Home</a> </li>
+                <li> <a href="../pages/recover.html">Recover Lost Documents</a> </li>
+                <li> <a href="../pages/submit.html">Submit Found Documents</a> </li>
+                <li> <a href="../pages/howto.html">Guide On How To Use</a> </li>
+                <li> <a href="../pages/contact.html">Contact Us</a> </li>
+                <li> <a href="../pages/helpcenter.html">Help Center</a> </li>
+                <li> <a href="../pages/account.html">Manage Your Account</a> </li>
+            </ul>
+        </div>
+    
+        <div class="submit-connect">
+            <div class="ftitle">Useful Buttons</div>
+            <div class="fbuttons">
+                <button class="cta"><a href="../pages/recover.html">Recover Lost Items</a></button>
+                <button class="cta"><a href="../pages/submit.html">Submit Found Items</a></button>
+            </div>
+            <div class="ftitle">Connect With Us</div>
+            <div class="socials">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-square-x-twitter" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+            </div>
+        </div>
+    </footer>
+    <div class="copy">© 2023 MyLostFind.Com. All rights reserved.</div>
+</body>
+<script src="../app.js"></script>
+
+</html>
