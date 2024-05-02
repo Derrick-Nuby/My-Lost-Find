@@ -1,0 +1,17 @@
+{
+  "name": "my-lost-find",
+  "version": "1.0.0",
+  "description": "Welcome to MyLostFind.Com, an innovative platform designed to assist Rwandans in recovering their lost documents and items efficiently. With the power of community collaboration, our website streamlines the process of reconnecting individuals with their valued belongings.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "concurrently \"tsc -w\" \"nodemon dist/app.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.4.5"
+  }
+}
