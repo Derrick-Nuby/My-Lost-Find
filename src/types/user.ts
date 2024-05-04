@@ -1,11 +1,11 @@
 import { Document } from "mongoose";
 export interface IUser extends Document {
-    fistName: string
+    firstName: string
     middleName: string
     lastName: string
     DOB: string
     documentNumber: string
-    phoneNumber: string
+    phone: string
     email: string
     address: string
     password: string
