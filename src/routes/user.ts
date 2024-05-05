@@ -9,7 +9,7 @@ router.post("/", createUser)
 router.post("/login", loginUser)
 router.get("/:id", getSingleUser)
 router.put("/:id", updateUser)
-router.get("/logout", logoutUser)
+router.get("/logout/:id", logoutUser)
 router.delete("/:id", deleteUser)
 router.post("/reset", resetPassword)
 
