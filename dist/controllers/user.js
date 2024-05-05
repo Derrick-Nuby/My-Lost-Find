@@ -1,6 +1,7 @@
 import User from "../models/user.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import mongoose from "mongoose";
 import dotenv from 'dotenv';
 dotenv.config();
 const jwtSecret = process.env.JWT_SECRET;
@@ -67,7 +68,14 @@ const loginUser = async (req, res) => {
 const getSingleUser = async (req, res) => {
     try {
         const userId = req.params.id;
-        const singleUser = await ;
+        if (!mongoose.Types.ObjectId.isValid(userId)) {
+            return res.status(400).json({ message: 'Invalid userId format' });
+        }
+        const user = await User.findById(userId, { password: 0 });
+        if (!user) {
+            return res.status(404).json({ error: "That user doesn't exist in our database" });
+        }
+        res.status(200).json({ message: "User details", user });
     }
     catch (error) {
         console.log(error);
@@ -75,7 +83,20 @@ const getSingleUser = async (req, res) => {
 };
 const updateUser = async (req, res) => {
     try {
-        res.status(200).json({ message: "updateUser successfully working" });
+        const userId = req.params.id;
+        if (!mongoose.Types.ObjectId.isValid(userId)) {
+            return res.status(400).json({ message: 'Invalid userId format' });
+        }
+        const user = await User.findById(userId);
+        if (!user) {
+            return res.status(404).json({ error: "That user doesn't exist in our database" });
+        }
+        const updatedFields = req.body;
+        if (updatedFields.password) {
+            updatedFields.password = await bcrypt.hash(updatedFields.password, 10);
+        }
+        const updatedUser = await User.findOneAndUpdate({ _id: userId }, updatedFields, { new: true, projection: { password: 0 } });
+        res.status(200).json({ message: "User updated successfully", updatedUser });
     }
     catch (error) {
         console.log(error);
@@ -83,7 +104,12 @@ const updateUser = async (req, res) => {
 };
 const logoutUser = async (req, res) => {
     try {
-        res.status(200).json({ message: "logoutUser successfully working" });
+        const userId = req.params.id;
+        if (!mongoose.Types.ObjectId.isValid(userId)) {
+            return res.status(400).json({ message: 'Invalid userId format' });
+        }
+        res.clearCookie('jwt', { path: '/' });
+        res.status(200).json({ message: 'User logged out successfully' });
     }
     catch (error) {
         console.log(error);
@@ -91,7 +117,16 @@ const logoutUser = async (req, res) => {
 };
 const deleteUser = async (req, res) => {
     try {
-        res.status(200).json({ message: "deleteUser successfully working" });
+        const userId = req.params.id;
+        if (!mongoose.Types.ObjectId.isValid(userId)) {
+            return res.status(400).json({ message: 'Invalid userId format' });
+        }
+        const user = await User.findById(userId);
+        if (!user) {
+            return res.status(404).json({ error: "That user doesn't exist in our database" });
+        }
+        const deletedUser = await User.findOneAndDelete({ _id: userId });
+        res.status(200).json({ message: "User deleted Successfully", deletedUser });
     }
     catch (error) {
         console.log(error);
